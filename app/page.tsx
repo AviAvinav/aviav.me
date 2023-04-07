@@ -22,6 +22,7 @@ import Skill from "~/components/Skill";
 import Navbutton from "./navbutton";
 import Button from "~/components/Button";
 import Project from "~/components/Project";
+import Footer from "./footer";
 
 export default function TestPage() {
   return (
@@ -147,6 +148,7 @@ export default function TestPage() {
             />
           </div>
         </div>
+        <Footer />
       </div>
     </main>
   );
