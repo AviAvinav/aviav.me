@@ -8,6 +8,7 @@ import { useStore } from "~/lib/store";
 
 const SideNav = () => {
   const isNavOpen = useStore(useCallback((state) => state.isNavOpen, []));
+  const setIsNavOpen = useStore(useCallback((state) => state.setIsNavOpen, []));
   return (
     <div
       className={clsx(
@@ -32,6 +33,7 @@ const SideNav = () => {
         <Link
           className="text-[2.5rem] sm:text-5xl lg:text-6xl xl:text-7xl sm:leading-tight lg:leading-[1.10] xl:leading-[1.15]"
           href="/blog"
+          onClick={setIsNavOpen}
         >
           Blog
         </Link>
