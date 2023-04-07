@@ -21,6 +21,7 @@ import {
 import Skill from "~/components/Skill";
 import Navbutton from "./navbutton";
 import Button from "~/components/Button";
+import Project from "~/components/Project";
 
 export default function TestPage() {
   return (
@@ -114,16 +115,6 @@ export default function TestPage() {
             I have worked on:
           </h3>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-8 xl:gap-x-12 gap-y-12 py-12 text-zinc-400">
-            {/* <Project
-              title="Aloria UI"
-              description="Aloria UI is a open-source react library to use amazing components, hooks, fonts and icons."
-              githubLink="https://github.com/AviAvinav/aloria-ui"
-            /> */}
-            {/* <Project
-              title="Aloria UI"
-              description="Aloria UI is a open-source react library to use amazing components, hooks, fonts and icons."
-              githubLink="https://github.com/AviAvinav/aloria-ui"
-            />
             <Project
               title="Aloria UI"
               description="Aloria UI is a open-source react library to use amazing components, hooks, fonts and icons."
@@ -143,9 +134,18 @@ export default function TestPage() {
               title="Aloria UI"
               description="Aloria UI is a open-source react library to use amazing components, hooks, fonts and icons."
               githubLink="https://github.com/AviAvinav/aloria-ui"
-            /> */}
+            />
+            <Project
+              title="Aloria UI"
+              description="Aloria UI is a open-source react library to use amazing components, hooks, fonts and icons."
+              githubLink="https://github.com/AviAvinav/aloria-ui"
+            />
+            <Project
+              title="Aloria UI"
+              description="Aloria UI is a open-source react library to use amazing components, hooks, fonts and icons."
+              githubLink="https://github.com/AviAvinav/aloria-ui"
+            />
           </div>
-          {/* <Button>View More</Button> */}
         </div>
       </div>
     </main>
