@@ -20,6 +20,7 @@ import {
 } from "react-icons/si";
 import Skill from "~/components/Skill";
 import Navbutton from "./navbutton";
+import Button from "~/components/Button";
 
 export default function TestPage() {
   return (
@@ -73,7 +74,7 @@ export default function TestPage() {
               </g>
             </svg>
           </div>
-          {/* <Button>Get In Touch</Button> */}
+          <Button>Get In Touch</Button>
         </div>
         <div className="w-screen z-10 flex flex-col px-10 sm:px-20 md:px-44 relative">
           <h3 className="text-zinc-400 text-[2rem] sm:text-3xl lg:text-4xl xl:text-5xl pt-32 font-medium relative">
