@@ -11,7 +11,7 @@ const SideNav = () => {
   return (
     <div
       className={clsx(
-        "min-h-screen min-w-screen text-gray-700 bg-emerald-200 -translate-x-full flex flex-row justify-between font-medium z-10 absolute top-0 left-0 right-0 px-10 sm:px-20 md:px-44",
+        "max-h-screen min-w-screen text-gray-700 bg-emerald-200 -translate-x-full flex flex-row justify-between font-medium z-10 fixed top-0 left-0 right-0 bottom-0 px-10 sm:px-20 md:px-44",
         isNavOpen ? "translate-x-0" : "-translate-x-[calc(100% - 50px)])]",
         "transition-all duration-500 ease-in-out"
       )}
