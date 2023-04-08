@@ -3,6 +3,7 @@
 import clsx from "clsx";
 import { Space_Grotesk } from "next/font/google";
 import { useCallback } from "react";
+import { Toaster } from "react-hot-toast";
 import SideNav from "~/components/SideNav";
 import { useStore } from "~/lib/store";
 
@@ -20,6 +21,7 @@ const ClientBody = ({ children }: { children: React.ReactNode }) => {
     >
       <SideNav />
       {children}
+      <Toaster position="bottom-right" containerStyle={{ margin: 50 }} />
     </body>
   );
 };
