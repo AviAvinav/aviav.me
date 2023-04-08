@@ -13,11 +13,6 @@ const Form = () => {
         type="email"
         placeholder="Email"
       />
-      <input
-        className="p-2 rounded-sm text-black placeholder:text-gray-800"
-        type="text"
-        placeholder="Subject"
-      />
       <textarea
         className="resize-none p-2 rounded-sm text-black placeholder:text-gray-800"
         placeholder="Message"
