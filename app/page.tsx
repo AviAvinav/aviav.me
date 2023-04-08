@@ -23,6 +23,17 @@ import Navbutton from "./navbutton";
 import Button from "~/components/Button";
 import Project from "~/components/Project";
 import Footer from "./footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Avi Avinav",
+  description: "Avi Avinav's portfolio website",
+  authors: [{ name: "Avi Avinav" }],
+  themeColor: "#a7f3d0",
+  openGraph: {},
+  verification: {},
+  appleWebApp: {},
+};
 
 export default function Home() {
   return (
