@@ -24,7 +24,15 @@ const Footer = () => {
             <Mail />
           </a>
         </div>
-        <p>Copyright ©️ 2023 | Made with 💖 by Avi Avinav</p>
+        <p>
+          Copyright © 2023 | Made with 💖 by{" "}
+          <a
+            className="underline decoration-dotted text-gray-300"
+            href="https://github.com/aviavinav"
+          >
+            Avi Avinav
+          </a>
+        </p>
       </div>
     </footer>
   );
