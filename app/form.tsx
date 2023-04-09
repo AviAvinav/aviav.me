@@ -11,10 +11,10 @@ const Form = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        process.env.serviceId,
-        process.env.templateId,
+        process.env.serviceId as string,
+        process.env.templateId as string,
         form.current || "",
-        process.env.publicKey
+        process.env.publicKey as string
       )
       .then(
         (result) => {
