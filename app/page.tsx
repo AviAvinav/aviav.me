@@ -22,7 +22,6 @@ import Skill from "~/components/Skill";
 import Navbutton from "./navbutton";
 import Button from "~/components/Button";
 import Project from "~/components/Project";
-import Footer from "./footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -157,7 +156,6 @@ export default function Home() {
             />
           </div>
         </div>
-        <Footer />
       </div>
     </main>
   );
