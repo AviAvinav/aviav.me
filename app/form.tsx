@@ -86,6 +86,7 @@ const Form = () => {
         className="bg-emerald-200 text-gray-800 py-4 rounded-sm disabled:opacity-50"
         type="submit"
         disabled={isButtonDisabled}
+        aria-label="Submit Form"
       >
         {isButtonDisabled ? "Sending..." : "Send"}
       </button>

@@ -12,16 +12,16 @@ const Footer = () => {
       <Form />
       <div className="flex flex-col justify-center flex-1 space-y-8">
         <div className="flex flex-row justify-center space-x-8 items-center">
-          <a href="https://github.com/AviAvinav">
+          <a aria-label="Go to Github" href="https://github.com/AviAvinav">
             <GitHub />
           </a>
-          <a href="https://linkedin.com/in/avi-avinav">
+          <a aria-label="Go to Linkedin" href="https://linkedin.com/in/avi-avinav">
             <Linkedin />
           </a>
-          <a href="https://twitter.com/@aviavinav0">
+          <a aria-label="Go to Twitter" href="https://twitter.com/@aviavinav0">
             <Twitter />
           </a>
-          <a href="mailto:hi@aviav.me">
+          <a aria-label="Email Me" href="mailto:hi@aviav.me">
             <Mail />
           </a>
         </div>
@@ -30,6 +30,7 @@ const Footer = () => {
           <a
             className="underline decoration-dotted text-gray-300"
             href="https://github.com/aviavinav"
+            aria-label="link to my github"
           >
             Avi Avinav
           </a>
