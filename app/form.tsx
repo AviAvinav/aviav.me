@@ -49,7 +49,7 @@ const Form = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col flex-1 space-y-4 md:pr-40 mb-8 md:mb-0"
+      className="flex flex-col flex-1 space-y-4 md:pr-40 mb-10 md:mb-0"
     >
       <div className="flex flex-col space-y-1.5">
         <label htmlFor="name" className="text-gray-300 text-left">Name</label>
