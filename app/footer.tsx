@@ -1,14 +1,15 @@
 "use client";
 
 import { GitHub, Linkedin, Mail, Twitter } from "react-feather";
+import Form from "./form";
 
 const Footer = () => {
   return (
     <footer
       id="footer"
-      className="text-center flex flex-col md:flex-row justify-between bg-zinc-400 bg-opacity-20 px-10 sm:px-20 md:px-44 py-20"
+      className="text-center flex flex-col md:flex-row justify-between bg-zinc-400 bg-opacity-20 px-10 sm:px-20 md:px-44 py-12"
     >
-      {/* <Form /> */}
+      <Form />
       <div className="flex flex-col justify-center flex-1 space-y-8">
         <div className="flex flex-row justify-center space-x-8 items-center">
           <a href="https://github.com/AviAvinav">

@@ -1,6 +1,6 @@
-import Navbutton from "../navbutton";
+import Navbutton from "~/app/navbutton";
 
-const Blog = () => {
+const Projects = () => {
   return (
     <main className="relative z-0">
       <div className="text-zinc-400 selection:bg-emerald-200 selection:text-black bg-black relative">
@@ -9,11 +9,11 @@ const Blog = () => {
         </div>
         <div className="h-screen w-screen z-10 flex flex-col items-center justify-center px-10 sm:px-20 md:px-44 relative">
           <h1 className="text-[2.5rem] sm:text-5xl lg:text-6xl">This page is under construction</h1>
-          <p className="text-2xl">Blog</p>
+          <p className="text-2xl">Projects</p>
         </div>
       </div>
     </main>
   );
 };
 
-export default Blog;
+export default Projects;
