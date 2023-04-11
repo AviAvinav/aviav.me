@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://www.aviav.me/sitemap.xml
