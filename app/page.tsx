@@ -132,29 +132,29 @@ export default function Home() {
               githubLink="https://github.com/AviAvinav/aloria-ui"
             />
             <Project
-              title="Aloria UI"
-              description="Aloria UI is a open-source react library to use amazing components, hooks, fonts and icons."
+              title="Chai"
+              description="A simple, opinionated react-native stack with Typescript, Expo-router, Tailwind & Zustand."
+              githubLink="https://github.com/AviAvinav/chai"
+            />
+            <Project
+              title="Remix, Medusa Ecommerce Website"
+              description=" An ecommerce store with Remix, Medusa & Strapi CMS."
               githubLink="https://github.com/AviAvinav/aloria-ui"
             />
             <Project
-              title="Aloria UI"
-              description="Aloria UI is a open-source react library to use amazing components, hooks, fonts and icons."
-              githubLink="https://github.com/AviAvinav/aloria-ui"
+              title="DiscussionOwl"
+              description="DiscussionOwl is a discussion forum built for students to help each other with React, Bootstrap & Firebase."
+              githubLink="https://github.com/AviAvinav/DiscussionOwl"
             />
             <Project
-              title="Aloria UI"
-              description="Aloria UI is a open-source react library to use amazing components, hooks, fonts and icons."
-              githubLink="https://github.com/AviAvinav/aloria-ui"
+              title="Netflix Clone"
+              description="A clone of the netflix mobile app created with react native and styled components."
+              githubLink="https://github.com/AviAvinav/Netflix-Clone"
             />
             <Project
-              title="Aloria UI"
-              description="Aloria UI is a open-source react library to use amazing components, hooks, fonts and icons."
-              githubLink="https://github.com/AviAvinav/aloria-ui"
-            />
-            <Project
-              title="Aloria UI"
-              description="Aloria UI is a open-source react library to use amazing components, hooks, fonts and icons."
-              githubLink="https://github.com/AviAvinav/aloria-ui"
+              title="Code Editor"
+              description="A simple online code editor made with react and codemirror that gives a live preview."
+              githubLink="https://github.com/AviAvinav/Avi-Code-Editor"
             />
           </div>
         </div>

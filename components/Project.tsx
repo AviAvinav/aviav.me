@@ -5,7 +5,7 @@ interface ProjectProps {
   title: string;
   description: string;
   demoLink?: string;
-  githubLink?: string;
+  githubLink: string;
 }
 
 const Project = ({
@@ -15,11 +15,11 @@ const Project = ({
   githubLink,
 }: ProjectProps) => {
   return (
-    <div className="p-5 bg-zinc-400 bg-opacity-20 relative space-y-3">
-      <h4 className="text-xl text-white">{title}</h4>
-      <p>{description}</p>
+    <div className="p-5 bg-zinc-400 bg-opacity-20 relative">
+      <h4 className="text-xl text-white mb-3">{title}</h4>
+      <p className="mb-3">{description}</p>
       {/* {demoLink && <a href={demoLink}>Demo</a>} */}
-      {githubLink && <SiGithub className="h-6 w-6" />}
+      {githubLink && <a href={githubLink}><SiGithub className="h-6 w-6 text-white" /></a>}
       <Underline />
     </div>
   );
