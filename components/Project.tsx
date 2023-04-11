@@ -16,7 +16,7 @@ const Project = ({
 }: ProjectProps) => {
   return (
     <div className="p-5 bg-zinc-400 bg-opacity-20 relative">
-      <h4 className="text-xl text-white mb-3">{title}</h4>
+      <h3 className="text-xl text-white mb-3">{title}</h3>
       <p className="mb-3">{description}</p>
       {/* {demoLink && <a href={demoLink}>Demo</a>} */}
       {githubLink && <a aria-label="Github Link" href={githubLink}><SiGithub className="h-6 w-6 text-white" /></a>}
