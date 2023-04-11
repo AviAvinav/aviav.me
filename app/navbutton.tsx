@@ -11,7 +11,7 @@ const Navbutton = ({ inNav }: { inNav?: boolean }) => {
   };
 
   return (
-    <button onClick={setIsNavOpen}>
+    <button aria-label="navigation menu button" onClick={setIsNavOpen}>
       {inNav ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"

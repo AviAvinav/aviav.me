@@ -8,6 +8,7 @@ interface ButtonProps {
   onClick?: () => void;
   disableUnderline?: boolean;
   href: string;
+  ariaLabel: string;
 }
 
 const Button: FC<ButtonProps> = ({
@@ -15,10 +16,12 @@ const Button: FC<ButtonProps> = ({
   className,
   onClick,
   disableUnderline,
-  href
+  href,
+  ariaLabel,
 }) => {
   return (
     <a
+      aria-label={ariaLabel}
       href={href}
       onClick={onClick}
       className={clsx(

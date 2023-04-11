@@ -44,7 +44,7 @@ export default function Home() {
         </div>
         <div
           className={clsx(
-            "h-screen w-screen z-10 flex flex-col px-10 sm:px-20 md:px-44 relative"
+            "h-screen w-screen z-10 flex flex-col px-10 sm:px-20 md:px-44 relative mb-8"
           )}
         >
           <header className="pt-32 pb-6 text-2xl md:text-3xl font-medium text-zinc-200">
@@ -83,20 +83,19 @@ export default function Home() {
               </g>
             </svg>
           </div>
-          {/* Replace with react-scroll */}
-          <Button href="/#footer">
+          <Button ariaLabel="Get In Touch" href="/#footer">
             Get In Touch
           </Button>
         </div>
         <div className="w-screen z-10 flex flex-col px-10 sm:px-20 md:px-44 relative">
-          <h3 className="text-zinc-400 text-[2rem] sm:text-3xl lg:text-4xl xl:text-5xl pt-32 font-medium relative">
+          <h2 className="text-zinc-400 text-[2rem] sm:text-3xl lg:text-4xl xl:text-5xl pt-32 font-medium relative">
             These are the{" "}
             <span className="relative text-gray-50">
               technologies
               <Underline />
             </span>{" "}
             I use:
-          </h3>
+          </h2>
           <div className="w-full grid grid-cols-3 md:grid-cols-4 xl:grid-cols-8 gap-x-16 xl:gap-x-24 gap-y-12 py-12 text-zinc-400">
             <Skill Icon={SiReact} name="react" />
             <Skill Icon={SiNextdotjs} name="nextjs" />
@@ -117,14 +116,14 @@ export default function Home() {
           </div>
         </div>
         <div className="w-screen z-10 flex flex-col px-10 sm:px-20 md:px-44 relative">
-          <h3 className="text-zinc-400 text-[2rem] sm:text-3xl lg:text-4xl xl:text-5xl pt-44 font-medium relative">
+          <h2 className="text-zinc-400 text-[2rem] sm:text-3xl lg:text-4xl xl:text-5xl pt-44 font-medium relative">
             Check out some{" "}
             <span className="relative text-gray-50">
               projects
               <Underline />
             </span>{" "}
             I have worked on:
-          </h3>
+          </h2>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-8 xl:gap-x-12 gap-y-12 py-12 text-zinc-400">
             <Project
               title="Aloria UI"

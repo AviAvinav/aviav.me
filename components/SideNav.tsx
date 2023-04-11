@@ -16,21 +16,25 @@ const SideNav = () => {
     >
       <div className="flex flex-col justify-between min-h-screen py-32">
         <ConsiousLink
+          ariaLabel="Home"
           href="/"
         >
           Home
         </ConsiousLink>
         <ConsiousLink
+          ariaLabel="Projects"
           href="/projects"
         >
           Projects
         </ConsiousLink>
         <ConsiousLink
+          ariaLabel="Blog"
           href="/blog"
         >
           Blog
         </ConsiousLink>
         <ConsiousLink
+          ariaLabel="Contact"
           href="/#footer"
         >
           Contact
@@ -45,14 +49,15 @@ const SideNav = () => {
 
 interface ConsiousLinkProps {
   href: string;
+  ariaLabel: string;
   children: React.ReactNode;
 }
 
-const ConsiousLink = ({ href, children }: ConsiousLinkProps) => {
+const ConsiousLink = ({ href, ariaLabel, children }: ConsiousLinkProps) => {
   const setIsNavOpen = useStore(useCallback((state) => state.setIsNavOpen, []));
 
   return (
-    <Link onClick={setIsNavOpen} href={href} className={clsx("text-[2.5rem] text-gray-700 sm:text-5xl lg:text-6xl xl:text-7xl sm:leading-tight lg:leading-[1.10] xl:leading-[1.15]")}>
+    <Link aria-label={ariaLabel} onClick={setIsNavOpen} href={href} className={clsx("text-[2.5rem] text-gray-700 sm:text-5xl lg:text-6xl xl:text-7xl sm:leading-tight lg:leading-[1.10] xl:leading-[1.15]")}>
       {children}
     </Link>
   );
