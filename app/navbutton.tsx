@@ -6,10 +6,6 @@ import { useStore } from "~/lib/store";
 const Navbutton = ({ inNav }: { inNav?: boolean }) => {
   const setIsNavOpen = useStore(useCallback((state) => state.setIsNavOpen, []));
 
-  const handleClick = () => {
-    setIsNavOpen;
-  };
-
   return (
     <button aria-label="navigation menu button" onClick={setIsNavOpen}>
       {inNav ? (
