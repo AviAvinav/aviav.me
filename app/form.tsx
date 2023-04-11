@@ -11,16 +11,17 @@ const Form = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        process.env.serviceId as string,
-        process.env.templateId as string,
+        // get "serviceId" environment variable from .env.local
+        process.env.NEXT_PUBLIC_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID as string,
         form.current || "",
-        process.env.publicKey as string
+        process.env.NEXT_PUBLIC_PUBLIC_KEY as string
       )
       .then(
-        (result) => {
+        () => {
           toast("Message sent successfully!");
         },
-        (error) => {
+        () => {
           toast("Message failed to send.");
         }
       );
