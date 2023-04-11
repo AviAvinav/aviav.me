@@ -25,13 +25,25 @@ import Project from "~/components/Project";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Avi Avinav",
-  description: "Avi Avinav's portfolio website",
+  title: "Avi Avinav - Full Stack Developer",
+  description: "Full Stack Developer with a passion for building beautiful and intuitive user interfaces",
   authors: [{ name: "Avi Avinav" }],
-  themeColor: "#a7f3d0",
-  openGraph: {},
+  openGraph: {
+    type: "website",
+    title: "Avi Avinav - Full Stack Developer",
+    description: "Full Stack Developer with a passion for building beautiful and intuitive user interfaces",
+    siteName: "Avi Avinav - Full Stack Developer",
+  },
   verification: {},
-  appleWebApp: {},
+  appleWebApp: {
+    capable: true,
+    title: "Avi Avinav - Full Stack Developer",
+  },
+  twitter: {
+    title: "Avi Avinav - Full Stack Developer",
+    description: "Full Stack Developer with a passion for building beautiful and intuitive user interfaces",
+    creator: "@aviavinav0",
+  }
 };
 
 export default function Home() {
@@ -43,7 +55,7 @@ export default function Home() {
         </div>
         <div
           className={clsx(
-            "h-screen w-screen z-10 flex flex-col px-10 sm:px-20 md:px-44 relative mb-8"
+            "h-[calc(100vh+5rem)] md:h-screen w-screen z-10 flex flex-col px-10 sm:px-20 md:px-44 relative mb-8"
           )}
         >
           <header className="pt-32 pb-6 text-2xl md:text-3xl font-medium text-zinc-200">
@@ -86,6 +98,23 @@ export default function Home() {
             Get In Touch
           </Button>
         </div>
+        {/*<div className="w-screen z-10 flex flex-col px-10 sm:px-20 md:px-44 relative">*/}
+        {/*  <h2 className="text-zinc-400 text-[2rem] sm:text-3xl lg:text-4xl xl:text-5xl pt-32 font-medium relative">*/}
+        {/*    About{" "}*/}
+        {/*    <span className="relative text-gray-50">*/}
+        {/*      me*/}
+        {/*      <Underline />*/}
+        {/*    </span>{" "}*/}
+        {/*    :*/}
+        {/*  </h2>*/}
+        {/*  <p className="mt-8 text-lg leading-10 xl:text-2xl">*/}
+
+        {/*    Currently, I am a developer, and student. I love to learn anything new, especially, in the field of tech. I mostly use react for my website but I have also used Vue and Svelte a bit. I also use React Native for cross-platform mobile development, you can see more of the tech I use below.*/}
+
+        {/*    Apart from my career, I enjoy gaming, reading novels, watching movies, and anime. I also love to go cycling with my friends.*/}
+
+        {/*    I am always happy to chat, feel free to <a href="/#footer" aria-label="contact me" className="underline decoration-dotted">contact me</a>.</p>*/}
+        {/*</div>*/}
         <div className="w-screen z-10 flex flex-col px-10 sm:px-20 md:px-44 relative">
           <h2 className="text-zinc-400 text-[2rem] sm:text-3xl lg:text-4xl xl:text-5xl pt-32 font-medium relative">
             These are the{" "}
