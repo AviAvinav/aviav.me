@@ -34,6 +34,7 @@ export const metadata: Metadata = {
     description: "Full Stack Developer with a passion for building beautiful and intuitive user interfaces",
     siteName: "Avi Avinav - Full Stack Developer",
   },
+  icons: [{rel: "icon", url: "/favicon.svg"}, {rel: "apple-touch-icon", url: "/logo192.png"}],
   verification: {},
   appleWebApp: {
     capable: true,
