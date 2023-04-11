@@ -1,5 +1,3 @@
-"use client";
-
 import { GitHub, Linkedin, Mail, Twitter } from "react-feather";
 import Form from "./form";
 
