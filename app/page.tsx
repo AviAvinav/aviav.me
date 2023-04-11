@@ -84,8 +84,8 @@ export default function Home() {
             </svg>
           </div>
           {/* Replace with react-scroll */}
-          <Button>
-            <a href="#footer">Get In Touch</a>
+          <Button href="/#footer">
+            Get In Touch
           </Button>
         </div>
         <div className="w-screen z-10 flex flex-col px-10 sm:px-20 md:px-44 relative">

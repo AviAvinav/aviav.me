@@ -7,6 +7,7 @@ interface ButtonProps {
   className?: string;
   onClick?: () => void;
   disableUnderline?: boolean;
+  href: string;
 }
 
 const Button: FC<ButtonProps> = ({
@@ -14,18 +15,20 @@ const Button: FC<ButtonProps> = ({
   className,
   onClick,
   disableUnderline,
+  href
 }) => {
   return (
-    <button
+    <a
+      href={href}
       onClick={onClick}
       className={clsx(
-        "w-full md:w-3/5 mt-4 relative bg-zinc-400 bg-opacity-20 font-medium text-gray-50 py-5 text-4xl",
+        "w-full md:w-3/5 mt-4 relative bg-zinc-400 bg-opacity-20 font-medium text-gray-50 py-5 text-4xl flex items-center justify-center cursor-pointer",
         className && `${className}`
       )}
     >
       {children}
       {disableUnderline ? <></> : <Underline />}
-    </button>
+    </a>
   );
 };
 
