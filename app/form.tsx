@@ -82,6 +82,7 @@ const Form = () => {
         />
         {errors.message && <p className="text-red-400 text-left text-sm">Please enter a message</p>}
       </div>
+      <div className="h-2" />
       <button
         className="bg-emerald-200 text-gray-800 py-4 rounded-sm disabled:opacity-50"
         type="submit"
