@@ -117,7 +117,7 @@ export default function Home() {
             Hello! I am Avi, a developer and student. I love to learn anything new, especially, in the field of tech.
             I mostly use React for my projects but have also used Vue and Svelte. I also use React Native for cross-platform mobile development, you can see more of the tech I use below.
             I am an open-source enthusiast and have contributed a little to projects like Next.js, TailwindCSS, Nativewind & more.
-            I also write technical articles when I find the time, you can find them <a aria-label="link to blog" className="underline decoration-dotted hover:text-white" href="https://dev.to/aviavinav/">here</a>. Apart from my career, I enjoy gaming, reading novels, and watching movies and anime.
+            I also write technical articles when I find the time. Apart from my career, I enjoy gaming, reading novels, and watching movies and anime.
             I also love to go cycling with my friends. I am always happy to chat, feel free to <a href="/#footer" aria-label="contact me" className="underline decoration-dotted hover:text-white">contact me</a>.
           </p>
         </div>
