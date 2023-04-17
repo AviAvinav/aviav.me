@@ -114,12 +114,12 @@ export default function Home() {
             :
           </h2>
           <p className="mt-8 text-gray-300 text-lg leading-10 xl:leading-[2.8rem] xl:text-xl font-medium">
-
-            Currently, I am a developer, and student. I love to learn anything new, especially, in the field of tech. I mostly use React for my projects but I have also used Vue and Svelte a bit. I also use React Native for cross-platform mobile development, you can see more of the tech I use below.
-
-            Apart from my career, I enjoy gaming, reading novels, watching movies, and anime. I also love to go cycling with my friends.
-
-            I am always happy to chat, feel free to <a href="/#footer" aria-label="contact me" className="underline decoration-dotted">contact me</a>.</p>
+            Hello! I am Avi, a developer and student. I love to learn anything new, especially, in the field of tech.
+            I mostly use React for my projects but have also used Vue and Svelte. I also use React Native for cross-platform mobile development, you can see more of the tech I use below.
+            I am an open-source enthusiast and have contributed a little to projects like Next.js, TailwindCSS, Nativewind & more.
+            I also write technical articles when I find the time, you can find them <a aria-label="link to blog" className="underline decoration-dotted hover:text-white" href="https://dev.to/aviavinav/">here</a>. Apart from my career, I enjoy gaming, reading novels, and watching movies and anime.
+            I also love to go cycling with my friends. I am always happy to chat, feel free to <a href="/#footer" aria-label="contact me" className="underline decoration-dotted hover:text-white">contact me</a>.
+          </p>
         </div>
         <div className="w-screen z-10 flex flex-col px-10 sm:px-20 md:px-44 relative">
           <h2 className="text-zinc-400 text-[2rem] sm:text-3xl lg:text-4xl xl:text-5xl pt-32 font-medium relative">
