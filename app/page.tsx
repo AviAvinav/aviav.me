@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: "Avi Avinav - Full Stack Developer",
   },
   keywords: ["Avi Avinav", "Avi", "Avinav", "Full Stack Developer"],
-  icons: [{rel: "icon", url: "/favicon.svg"}, {rel: "apple-touch-icon", url: "/logo192.png"}],
+  icons: {icon: "/favicon.svg", apple: "/logo192.png"},
   manifest: "/manifest.json",
   robots: "/robots.txt",
   verification: {
