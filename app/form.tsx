@@ -76,7 +76,7 @@ const Form = () => {
       <div className="flex flex-col space-y-1.5">
         <label htmlFor="message" className="text-gray-300 text-left">Message</label>
         <textarea
-          className="resize-none p-2 rounded-sm text-black placeholder:text-gray-800"
+          className="resize-y p-2 rounded-sm text-black placeholder:text-gray-800"
           placeholder="Message"
           {...register("message", { required: true })}
         />
