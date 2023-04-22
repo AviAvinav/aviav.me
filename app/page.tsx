@@ -29,12 +29,16 @@ export const metadata: Metadata = {
   description:
     "Full Stack Developer with a passion for building beautiful and intuitive user interfaces",
   authors: [{ name: "Avi Avinav" }],
+  alternates: {
+    canonical: "https://www.aviav.me"
+  },
   openGraph: {
     type: "website",
     title: "Avi Avinav - Full Stack Developer",
     description:
       "Full Stack Developer with a passion for building beautiful and intuitive user interfaces",
     siteName: "Avi Avinav - Full Stack Developer",
+    url: "https://www.aviav.me",
   },
   keywords: ["Avi Avinav", "Avi", "Avinav", "Full Stack Developer"],
   icons: { icon: "/favicon.svg", apple: "/logo192.png" },
