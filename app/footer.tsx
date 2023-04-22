@@ -10,16 +10,16 @@ const Footer = () => {
       <Form />
       <div className="flex flex-col justify-center flex-1 space-y-8">
         <div className="flex flex-row justify-center space-x-8 items-center">
-          <a aria-label="Go to Github" href="https://github.com/AviAvinav">
+          <a className="transition ease-in-out duration-100 lg:hover:scale-125" aria-label="Go to Github" href="https://github.com/AviAvinav">
             <GitHub />
           </a>
-          <a aria-label="Go to Linkedin" href="https://linkedin.com/in/avi-avinav">
+          <a className="transition ease-in-out duration-100 lg:hover:scale-125" aria-label="Go to Linkedin" href="https://linkedin.com/in/avi-avinav">
             <Linkedin />
           </a>
-          <a aria-label="Go to Twitter" href="https://twitter.com/@aviavinav0">
+          <a className="transition ease-in-out duration-100 lg:hover:scale-125" aria-label="Go to Twitter" href="https://twitter.com/@aviavinav0">
             <Twitter />
           </a>
-          <a aria-label="Email Me" href="mailto:hi@aviav.me">
+          <a className="transition ease-in-out duration-100 lg:hover:scale-125" aria-label="Email Me" href="mailto:hi@aviav.me">
             <Mail />
           </a>
         </div>
