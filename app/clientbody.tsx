@@ -22,7 +22,7 @@ const ClientBody = ({ children }: { children: React.ReactNode }) => {
     >
       <SideNav />
       {children}
-      <Footer/>
+      <Footer />
       <Toaster position="bottom-right" containerStyle={{ margin: 50 }} />
     </body>
   );

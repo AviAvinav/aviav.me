@@ -8,7 +8,9 @@ const Projects = () => {
           <Navbutton />
         </div>
         <div className="h-screen w-screen z-10 flex flex-col items-center justify-center px-10 sm:px-20 md:px-44 relative">
-          <h1 className="text-[2.5rem] sm:text-5xl lg:text-6xl">This page is under construction</h1>
+          <h1 className="text-[2.5rem] sm:text-5xl lg:text-6xl">
+            This page is under construction
+          </h1>
           <p className="text-2xl">Projects</p>
         </div>
       </div>

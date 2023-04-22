@@ -15,28 +15,16 @@ const SideNav = () => {
       )}
     >
       <div className="flex flex-col justify-between min-h-screen py-32">
-        <ConsiousLink
-          ariaLabel="Home"
-          href="/"
-        >
+        <ConsiousLink ariaLabel="Home" href="/">
           Home
         </ConsiousLink>
-        <ConsiousLink
-          ariaLabel="Projects"
-          href="/projects"
-        >
+        <ConsiousLink ariaLabel="Projects" href="/projects">
           Projects
         </ConsiousLink>
-        <ConsiousLink
-          ariaLabel="Blog"
-          href="/blog"
-        >
+        <ConsiousLink ariaLabel="Blog" href="/blog">
           Blog
         </ConsiousLink>
-        <ConsiousLink
-          ariaLabel="Contact"
-          href="/#footer"
-        >
+        <ConsiousLink ariaLabel="Contact" href="/#footer">
           Contact
         </ConsiousLink>
       </div>
@@ -57,7 +45,14 @@ const ConsiousLink = ({ href, ariaLabel, children }: ConsiousLinkProps) => {
   const setIsNavOpen = useStore(useCallback((state) => state.setIsNavOpen, []));
 
   return (
-    <Link aria-label={ariaLabel} onClick={setIsNavOpen} href={href} className={clsx("text-[2.5rem] text-gray-700 sm:text-5xl lg:text-6xl xl:text-7xl sm:leading-tight lg:leading-[1.10] xl:leading-[1.15] hover:text-gray-900 transition ease-in-out duration-200")}>
+    <Link
+      aria-label={ariaLabel}
+      onClick={setIsNavOpen}
+      href={href}
+      className={clsx(
+        "text-[2.5rem] text-gray-700 sm:text-5xl lg:text-6xl xl:text-7xl sm:leading-tight lg:leading-[1.10] xl:leading-[1.15] hover:text-gray-900 transition ease-in-out duration-200"
+      )}
+    >
       {children}
     </Link>
   );

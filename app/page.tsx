@@ -2,20 +2,20 @@ import clsx from "clsx";
 import Underline from "~/components/Underline";
 import {
   SiAdobexd,
-  SiCss3,
   SiFigma,
   SiFirebase,
   SiGit,
   SiGithub,
-  SiHtml5,
   SiJavascript,
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
   SiPostgresql,
+  SiPrisma,
   SiReact,
   SiSupabase,
   SiTailwindcss,
+  SiTrpc,
   SiTypescript,
 } from "react-icons/si";
 import Skill from "~/components/Skill";
@@ -26,16 +26,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Avi Avinav - Full Stack Developer",
-  description: "Full Stack Developer with a passion for building beautiful and intuitive user interfaces",
+  description:
+    "Full Stack Developer with a passion for building beautiful and intuitive user interfaces",
   authors: [{ name: "Avi Avinav" }],
   openGraph: {
     type: "website",
     title: "Avi Avinav - Full Stack Developer",
-    description: "Full Stack Developer with a passion for building beautiful and intuitive user interfaces",
+    description:
+      "Full Stack Developer with a passion for building beautiful and intuitive user interfaces",
     siteName: "Avi Avinav - Full Stack Developer",
   },
   keywords: ["Avi Avinav", "Avi", "Avinav", "Full Stack Developer"],
-  icons: {icon: "/favicon.svg", apple: "/logo192.png"},
+  icons: { icon: "/favicon.svg", apple: "/logo192.png" },
   manifest: "/manifest.json",
   robots: "/robots.txt",
   verification: {
@@ -47,9 +49,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     title: "Avi Avinav - Full Stack Developer",
-    description: "Full Stack Developer with a passion for building beautiful and intuitive user interfaces",
+    description:
+      "Full Stack Developer with a passion for building beautiful and intuitive user interfaces",
     creator: "@aviavinav0",
-  }
+  },
 };
 
 export default function Home() {
@@ -114,11 +117,24 @@ export default function Home() {
             :
           </h2>
           <p className="mt-8 text-gray-300 text-lg leading-10 xl:leading-[2.8rem] xl:text-xl font-medium">
-            Hello! I am Avi, a developer and student. I love to learn anything new, especially, in the field of tech.
-            I mostly use React for my projects but have also used Vue and Svelte. I also use React Native for cross-platform mobile development, you can see more of the tech I use below.
-            I am an open-source enthusiast and have contributed a little to projects like Next.js, TailwindCSS, Nativewind & more.
-            I also write technical articles when I find the time. Apart from my career, I enjoy gaming, reading novels, and watching movies and anime.
-            I also love to go cycling with my friends. I am always happy to chat, feel free to <a href="/#footer" aria-label="contact me" className="underline decoration-dotted hover:text-white">contact me</a>.
+            Hello! I am Avi, a developer and student. I love to learn anything
+            new, especially, in the field of tech. I mostly use React for my
+            projects but have also used Vue and Svelte. I also use React Native
+            for cross-platform mobile development, you can see more of the tech
+            I use below. I am an open-source enthusiast and have contributed a
+            little to projects like Next.js, TailwindCSS, Nativewind & more. I
+            also write technical articles when I find the time. Apart from my
+            career, I enjoy gaming, reading novels, and watching movies and
+            anime. I also love to go cycling with my friends. I am always happy
+            to chat, feel free to{" "}
+            <a
+              href="/#footer"
+              aria-label="contact me"
+              className="underline decoration-dotted hover:text-white"
+            >
+              contact me
+            </a>
+            .
           </p>
         </div>
         <div className="w-screen z-10 flex flex-col px-10 sm:px-20 md:px-44 relative">
@@ -137,8 +153,8 @@ export default function Home() {
             <Skill Icon={SiNodedotjs} name="nodejs" />
             <Skill Icon={SiTypescript} name="typescript" />
             <Skill Icon={SiJavascript} name="javascript" />
-            <Skill Icon={SiHtml5} name="HTML" />
-            <Skill Icon={SiCss3} name="CSS" />
+            <Skill Icon={SiPrisma} name="prisma" />
+            <Skill Icon={SiTrpc} name="trpc" />
             <Skill Icon={SiGit} name="git" />
             <Skill Icon={SiGithub} name="github" />
             <Skill Icon={SiFigma} name="figma" />

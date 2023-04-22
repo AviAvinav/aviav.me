@@ -25,7 +25,7 @@ const Button: FC<ButtonProps> = ({
       href={href}
       onClick={onClick}
       className={clsx(
-        "w-full md:w-3/5 mt-4 relative bg-zinc-400 bg-opacity-20 font-medium text-gray-50 py-5 text-4xl flex items-center justify-center cursor-pointer",
+        "w-full md:w-3/5 mt-4 relative bg-zinc-400 bg-opacity-20 font-medium text-gray-50 py-5 text-4xl flex items-center justify-center cursor-pointer transition ease-in-out duration-100 lg:hover:scale-105",
         className && `${className}`
       )}
     >
