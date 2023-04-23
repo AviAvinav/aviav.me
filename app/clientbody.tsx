@@ -4,7 +4,7 @@ import clsx from "clsx";
 import { Space_Grotesk } from "next/font/google";
 import { useCallback } from "react";
 import { Toaster } from "react-hot-toast";
-import SideNav from "~/components/SideNav";
+import SideNav from "~/app/sidenav";
 import { useStore } from "~/lib/store";
 import Footer from "~/app/footer";
 

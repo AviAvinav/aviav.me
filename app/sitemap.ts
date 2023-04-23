@@ -1,18 +1,20 @@
-import { MetadataRoute } from 'next';
+import { MetadataRoute } from "next";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+const sitemap: () => MetadataRoute.Sitemap = () => {
   return [
     {
-      url: 'https://www.aviav.me',
+      url: "https://www.aviav.me",
       lastModified: new Date(),
     },
     {
-      url: 'https://www.aviav.me/projects',
+      url: "https://www.aviav.me/projects",
       lastModified: new Date(),
     },
     {
-      url: 'https://www.aviav.me/blog',
+      url: "https://www.aviav.me/blog",
       lastModified: new Date(),
     },
   ];
-}
+};
+
+export default sitemap;

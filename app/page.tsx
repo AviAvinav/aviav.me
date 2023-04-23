@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import Underline from "~/components/Underline";
+import Underline from "~/app/underline";
 import {
   SiAdobexd,
   SiFigma,
@@ -18,10 +18,10 @@ import {
   SiTrpc,
   SiTypescript,
 } from "react-icons/si";
-import Skill from "~/components/Skill";
+import Skill from "~/app/skill";
 import Navbutton from "./navbutton";
-import Button from "~/components/Button";
-import Project from "~/components/Project";
+import Button from "~/app/button";
+import Project from "~/app/project";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "Full Stack Developer with a passion for building beautiful and intuitive user interfaces",
   authors: [{ name: "Avi Avinav" }],
   alternates: {
-    canonical: "https://www.aviav.me"
+    canonical: "https://www.aviav.me",
   },
   openGraph: {
     type: "website",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Home() {
+const Home = () => {
   return (
     <main className="relative z-0">
       <div className="text-zinc-400 selection:bg-emerald-200 selection:text-black bg-black relative">
@@ -214,4 +214,6 @@ export default function Home() {
       </div>
     </main>
   );
-}
+};
+
+export default Home;

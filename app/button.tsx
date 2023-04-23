@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import type { ReactNode, FC } from "react";
-import Underline from "./Underline";
+import Underline from "./underline";
 
 interface ButtonProps {
   children: ReactNode;

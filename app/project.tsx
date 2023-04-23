@@ -1,5 +1,5 @@
 import { SiGithub } from "react-icons/si";
-import Underline from "./Underline";
+import Underline from "./underline";
 
 interface ProjectProps {
   title: string;
