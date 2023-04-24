@@ -121,7 +121,7 @@ const Home = () => {
             :
           </h2>
           <p className="mt-8 text-gray-300 text-lg leading-10 xl:leading-[2.8rem] xl:text-xl font-medium">
-            Hello! I am Avi, a developer and student. I love to learn anything
+            Hello! I am Avi Avinav, a developer and student. I love to learn anything
             new, especially, in the field of tech. I mostly use React for my
             projects but have also used Vue and Svelte. I also use React Native
             for cross-platform mobile development, you can see more of the tech
