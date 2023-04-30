@@ -7,6 +7,7 @@ import { Toaster } from "react-hot-toast";
 import SideNav from "~/app/sidenav";
 import { useStore } from "~/lib/store";
 import Footer from "~/app/footer";
+import { Analytics } from '@vercel/analytics/react'
 
 const grotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ const ClientBody = ({ children }: { children: React.ReactNode }) => {
       {children}
       <Footer />
       <Toaster position="bottom-right" containerStyle={{ margin: 50 }} />
+      <Analytics />
     </body>
   );
 };
