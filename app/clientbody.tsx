@@ -2,12 +2,13 @@
 
 import clsx from "clsx";
 import { Space_Grotesk } from "next/font/google";
-import { useCallback } from "react";
+import { Suspense, useCallback } from "react";
 import { Toaster } from "react-hot-toast";
 import SideNav from "~/app/sidenav";
 import { useStore } from "~/lib/store";
 import Footer from "~/app/footer";
 import { Analytics } from "@vercel/analytics/react";
+import { TbLoader2 } from "react-icons/tb";
 
 const grotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -21,12 +22,23 @@ const ClientBody = ({ children }: { children: React.ReactNode }) => {
         isNavOpen ? "overflow-y-hidden" : "overflow-y-auto"
       )}
     >
-      <SideNav />
-      {children}
-      <Footer />
-      <Toaster position="bottom-right" containerStyle={{ margin: 50 }} />
+      <Suspense fallback={<Loading />}>
+        <SideNav />
+        {children}
+        <Footer />
+        <Toaster position="bottom-right" containerStyle={{ margin: 50 }} />
+      </Suspense>
       <Analytics />
     </body>
+  );
+};
+
+const Loading = () => {
+  return (
+    <div className="h-screen w-screen flex flex-col items-center justify-center space-y-3 bg-black">
+      <TbLoader2 className="h-20 w-20 animate-spin" />
+      <p className="text-2xl">Loading...</p>
+    </div>
   );
 };
 
