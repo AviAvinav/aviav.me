@@ -133,7 +133,7 @@ const Home = () => {
 						contributed a little to projects like Next.js, TailwindCSS,
 						Nativewind & more. I also write{" "}
 						<Link
-							className="underline decoration-dotted hover:text-white"
+							className="underline decoration-dotted hover:text-white text-gray-100"
 							href="https://dev.to/aviavinav/"
 						>
 							technical articles
@@ -144,7 +144,7 @@ const Home = () => {
 						<a
 							href="/#footer"
 							aria-label="contact me"
-							className="underline decoration-dotted hover:text-white"
+							className="underline decoration-dotted hover:text-white text-gray-100"
 						>
 							contact me
 						</a>
